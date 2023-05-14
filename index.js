@@ -17,7 +17,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
     try{
-        //  const serviceCollection = client.db("Dentop").collection("Services");
+       
         const menuCollection= client.db('coffeapp').collection("menu")
          app.get("/services", async (req, res) => {
             const query = {};
